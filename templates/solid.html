@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SOLID</title>
+	<!--CSS-->
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <!--banner-->
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="{{ url_for('home') }}" class="nav__logo">STATE OF MATTER</a>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="{{ url_for('home') }}" class="nav__link">HOME</a></li>
+					<li class="nav__item"><a href="{{ url_for('solid') }}" class="nav__link active-link">SOLID</a></li>
+					<li class="nav__item"><a href="{{ url_for('liquid') }}" class="nav__link">LIQUID</a></li>
+					<li class="nav__item"><a href="{{ url_for('gas') }}" class="nav__link">GAS</a></li>
+					<li class="nav__item"><a href="{{ url_for('plasma') }}" class="nav__link">PLASMA</a></li>
+
+					<li><i class='bx bxs-moon change-theme' id="theme-button"></i></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+            </div>
+		</nav>
+	</header>
+
+	<main class="l-main">
+
+		<section class="home" id="home">
+			<div class="home__container bd-container bd-grid">
+				<div class="home__data">
+					<h1 class="home__title">SOLID</h1>
+                    <p class="">STATE OF MATTER</p>
+                    <h2 class="home__subtitle">Anything that has mass is made up of matter</h2>
+                </div>
+
+			    <img src="static/img/solid.gif" alt="" class="home__img">
+            </div>
+        </section>
+            
+
+        <section class="about section bd-container" id="about">
+	        <div class="about__container  bd-grid">
+				<div class="about__data">
+                    <span class="section-subtitle about__initial">SOLID</span>
+                    <h2 class="section-title about__initial">Examples</h2>
+                    <p class="about__description">· ROCK</p>
+					<p class="about__description">· ICE</p>
+					<p class="about__description">· WOOD</p>
+					<p class="about__description">· MINERALS</p>
+                </div>
+
+				<img src="static/img/giphy_s.gif" alt="" class="about__img">
+				<p>In a solid, constituent particles (ions, atoms, or molecules) are closely packed together. <br>The forces between particles are so strong that the particles cannot move freely but can only vibrate. As a result, a solid has a stable, definite shape, and a definite volume. Solids can only change their shape by an outside force, as when broken or cut.</p>
+            </div>
+        </section>
+    <!--/banner-->
+
+	<!--footer-->
+	<footer class="footer section bd-container">
+		<p class="footer__copy">&#169; 2022 JK</p>
+	</footer>
+    <!--/footer-->
+	
+	<!--script-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!--/script-->
+</body>
+</html>

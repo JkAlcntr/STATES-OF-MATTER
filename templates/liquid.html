@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LIQUID</title>
+	<!--CSS-->
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <!--banner-->
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="{{ url_for('home') }}" class="nav__logo">STATE OF MATTER</a>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="{{ url_for('home') }}" class="nav__link">HOME</a></li>
+					<li class="nav__item"><a href="{{ url_for('solid') }}" class="nav__link">SOLID</a></li>
+					<li class="nav__item"><a href="{{ url_for('liquid') }}" class="nav__link active-link">LIQUID</a></li>
+					<li class="nav__item"><a href="{{ url_for('gas') }}" class="nav__link">GAS</a></li>
+					<li class="nav__item"><a href="{{ url_for('plasma') }}" class="nav__link">PLASMA</a></li>
+
+					<li><i class='bx bxs-moon change-theme' id="theme-button"></i></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+            </div>
+		</nav>
+	</header>
+
+	<main class="l-main">
+
+		<section class="home" id="home">
+			<div class="home__container bd-container bd-grid">
+				<div class="home__data">
+					<h1 class="home__title">LIQUID</h1>
+                    <p class="">STATE OF MATTER</p>
+                    <h2 class="home__subtitle">Anything that has mass is made up of matter</h2>
+                </div>
+
+			    <img src="static/img/plasma.gif" alt="" class="home__img">
+				
+            </div>
+        </section>
+            
+
+        <section class="about section bd-container" id="about">
+	        <div class="about__container  bd-grid">
+				<div class="about__data">
+                    <span class="section-subtitle about__initial">LIQUID</span>
+                    <h2 class="section-title about__initial">Examples</h2>
+                    <p class="about__description">· WATER</p>
+					<p class="about__description">· MILK</p>
+					<p class="about__description">· COFFEE</p>
+					<p class="about__description">· BLOOD</p>
+                </div>
+
+				<img src="static/img/liquid.gif" alt="" class="about__img">
+				<p>A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure. <br>The volume is definite if the temperature and pressure are constant. When a solid is heated above its melting point, it becomes liquid, given that the pressure is higher than the triple point of the substance. </p>
+            </div>
+        </section>
+    <!--/banner-->
+	
+	<!--footer-->
+	<footer class="footer section bd-container">
+		<p class="footer__copy">&#169; 2022 JK</p>
+	</footer>
+    <!--/footer-->
+
+	<!--script-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!--/script-->
+</body>
+</html>
